@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jborthick/Documents/selfstudy/Tutorials/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj": {}
+    "/home/jborthick/Documents/selfstudy/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj": {}
   },
   "projects": {
-    "/home/jborthick/Documents/selfstudy/Tutorials/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj": {
+    "/home/jborthick/Documents/selfstudy/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jborthick/Documents/selfstudy/Tutorials/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj",
+        "projectUniqueName": "/home/jborthick/Documents/selfstudy/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj",
         "projectName": "NeoTracker",
-        "projectPath": "/home/jborthick/Documents/selfstudy/Tutorials/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj",
+        "projectPath": "/home/jborthick/Documents/selfstudy/c#/c#_neo_tracker/Neo-Tracker-C#/NeoTracker.csproj",
         "packagesPath": "/home/jborthick/.nuget/packages/",
-        "outputPath": "/home/jborthick/Documents/selfstudy/Tutorials/c#/c#_neo_tracker/Neo-Tracker-C#/obj/",
+        "outputPath": "/home/jborthick/Documents/selfstudy/c#/c#_neo_tracker/Neo-Tracker-C#/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jborthick/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

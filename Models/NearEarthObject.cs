@@ -1,9 +1,11 @@
 
-namespace NeoTracker.Models
+using System.ComponentModel.DataAnnotations;
+namespace Neo_Tracker_C_.Models
 {
     public class NearEarthObject
     {
-        public string? Id { get; set; }
+    [Key]
+    public string? Id { get; set; }
         public string? Name { get; set; }
         public double AbsoluteMagnitudeH { get; set; }
         public double EstimatedDiameterMin { get; set; }

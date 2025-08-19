@@ -1,5 +1,5 @@
 using System.Text.Json;
-using NeoTracker.Models;
+using Neo_Tracker_C_.Models;
 
 namespace NeoTracker.Services
 {
@@ -24,7 +24,7 @@ namespace NeoTracker.Services
                         EstimatedDiameterMin = neoElem.GetProperty("estimated_diameter").GetProperty("kilometers").GetProperty("estimated_diameter_min").GetDouble(),
                         EstimatedDiameterMax = neoElem.GetProperty("estimated_diameter").GetProperty("kilometers").GetProperty("estimated_diameter_max").GetDouble(),
                         IsPotentiallyHazardousAsteroid = neoElem.GetProperty("is_potentially_hazardous_asteroid").GetBoolean(),
-                        CloseApproachDate = DateTime.Parse(neoElem.GetProperty("close_approach_data")[0].GetProperty("close_approach_date").GetString()!),
+                        CloseApproachDate = DateTime.SpecifyKind(DateTime.Parse(neoElem.GetProperty("close_approach_data")[0].GetProperty("close_approach_date").GetString()!), DateTimeKind.Utc),
                         RelativeVelocity = double.Parse(neoElem.GetProperty("close_approach_data")[0].GetProperty("relative_velocity").GetProperty("kilometers_per_second").GetString()!),
                         MissDistance = double.Parse(neoElem.GetProperty("close_approach_data")[0].GetProperty("miss_distance").GetProperty("miles").GetString()!),
                         OrbitingBody = neoElem.GetProperty("close_approach_data")[0].GetProperty("orbiting_body").GetString()!

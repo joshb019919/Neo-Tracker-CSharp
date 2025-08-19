@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NeoTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fea1545ff1a0a65d899df6720bdd2708c8178aed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c687da78cd25a5376e1e697f2604b8830c71917")]
 [assembly: System.Reflection.AssemblyProductAttribute("NeoTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NeoTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

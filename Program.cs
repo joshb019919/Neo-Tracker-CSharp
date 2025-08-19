@@ -1,8 +1,20 @@
+
+using Neo_Tracker_C_.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<NeoTracker.Services.INeoTrackerService, NeoTracker.Services.NeoTrackerService>();
+
+
+builder.Services.AddDbContext<NeoTrackerDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add authorization services to fix startup error
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
